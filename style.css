@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* fonts API google */
+
+
+
+/* end of external fonts */ 
+
+#main {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-gap: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto 40px;
+  grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+nav {
+  grid-area: m;
+  background-color: #005272;
+}
+
+header {
+  grid-area: h;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 100%;
+  background-color: #005272;
+}
+
+h1 {
+  font-family: 'Raleway';
+  color: whitesmoke;
+  padding: 5px;
+}
+
+main {
+  grid-area: c;
+  background-color: rgba(0, 82, 114, 0.3);
+}
+
+footer {
+  grid-area: f;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  width: 100%;
+  background-color: #005272;
+  color: whitesmoke;
+}
+
+article {
+  display: block;
+  width: 100%;
+}
+
+.right-image {
+  float: right;
+  width: 35%;
+  max-width: 1000px;
+  min-width: 150px;
+}
+
+.left-image {
+  float: left;
+  width: 35%;
+  max-width: 1000px;
+  min-width: 150px;
+}
+
+p {
+  text-align: justify;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav > p {
+  margin: 0px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: left;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+}
+.cleaner {
+  clear: both;
+}
+
+ul, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;  
+}
+
+h2 {
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Raleway';
+}
+
+figure {
+  margin: 10px;
+  padding: 10px;
+}
+
+figcaption {
+  font-size: 0.8rem;  
+  text-align: center;
+}
+
+nav> ul > li {
+  padding-left: 10px;
+}
+
+nav > ul > li > a {
+  display: block;
+  background-color: #005272;
+}
+li > a {
+  color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+
+nav > ul > li:hover > a {
+  background-color: rgb(150, 150, 150);
+}
+
+nav > ul > li:hover  {
+  background-color: rgb(150, 150, 150);
+}
+
+
